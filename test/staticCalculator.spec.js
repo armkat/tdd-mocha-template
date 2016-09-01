@@ -1,5 +1,5 @@
 import {expect} from "chai";
-import Calculator from "../src/calculator";
+import Calculator from "../src/staticCalculator";
 
 describe('calculator', () => {
   describe('#calculate()', () => {
