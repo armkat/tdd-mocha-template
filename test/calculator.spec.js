@@ -1,13 +1,15 @@
 import {expect} from "chai";
-import Calculator from "../src/staticCalculator";
+import Calculator from "../src/calculator";
 
-describe('staticCalculator', () => {
+describe('calculator', () => {
   describe('#calculate()', () => {
     context('when SUM operation is used', () => {
       it('should calculate sum of two numbers', () => {
-        const result = Calculator.calculate(1, 2, 'SUM');
+        const calculator = new Calculator('SUM');
+        const result = calculator.calculate(5, 3);
         expect(result).to.be.a('number');
       });
     });
+
   });
 });
