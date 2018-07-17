@@ -2,14 +2,15 @@
   "name": "tdd-mocha-template",
   "description": "Template for writing scripts using TDD and mocha",
   "version": "1.0.0",
-  "devDependencies": {
-    "babel-core": "^6.14.0",
-    "babel-preset-es2015": "^6.14.0",
-    "chai": "^3.5.0",
-    "mocha": "^3.0.2"
-  },
   "private": true,
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register"
+    "test": "mocha --require setup/babel-polyfill.js"
+  },
+  "dependencies": {
+    "@babel/register": "^7.0.0-beta.54",
+    "@babel/core": "7.0.0-beta.54",
+    "@babel/preset-env": "7.0.0-beta.54",
+    "chai": "4.1.2",
+    "mocha": "5.2.0"
   }
 }
